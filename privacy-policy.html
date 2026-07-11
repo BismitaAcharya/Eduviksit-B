@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | EduViksit Transformation Consultants</title>
+<meta name="description" content="How EduViksit Transformation Consultants collects, uses and protects personal data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F3A; --blue:#1B4F8C; --gold:#B8925A; --paper:#FAF9F6;
+  --ink:#151B23; --slate:#6B7280; --line:#E4E1D8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em;color:var(--navy);}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+@media(max-width:640px){.wrap{padding:0 20px;}}
+a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
+
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold);display:inline-block;}
+.eyebrow.on-dark{color:var(--gold);}
+
+/* NAV */
+header{position:sticky;top:0;z-index:100;background:rgba(11,31,58,0.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.08);}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1180px;margin:0 auto;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;color:#fff;font-size:1.18rem;}
+.logo-mark{width:30px;height:30px;border:1.4px solid var(--gold);border-radius:3px;position:relative;flex-shrink:0;}
+.logo-mark::before{content:"";position:absolute;inset:5px;border:1px solid var(--gold);opacity:0.5;}
+.nav-links{display:flex;gap:36px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.82);font-size:0.92rem;font-weight:500;transition:color .2s;}
+.nav-links a:hover, .nav-links a.active{color:var(--gold);}
+.nav-cta{background:var(--gold);color:var(--navy);padding:11px 22px;border-radius:2px;font-size:0.88rem;font-weight:600;transition:background .2s;}
+.nav-cta:hover{background:#cba374;}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;}
+@media(max-width:900px){.nav-links,.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+/* PAGE HERO (inner pages) */
+.page-hero{background:var(--navy);color:#fff;padding:80px 0 64px;position:relative;overflow:hidden;}
+.page-hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg, transparent 0 90px, rgba(184,146,90,0.06) 90px 91px);pointer-events:none;}
+.page-hero .crumb{position:relative;z-index:2;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:18px;}
+.page-hero .crumb a:hover{color:var(--gold);}
+.page-hero h1{position:relative;z-index:2;color:#fff;font-size:clamp(2rem,4.2vw,3rem);max-width:760px;line-height:1.15;}
+.page-hero p.lead{position:relative;z-index:2;color:rgba(255,255,255,0.75);max-width:600px;margin-top:20px;font-size:1.05rem;}
+
+/* SECTIONS */
+section.block{padding:76px 0;}
+section.block.tight{padding:56px 0;}
+section.block.bordered{border-top:1px solid var(--line);}
+section.block.on-paper{background:var(--paper);}
+section.block.on-white{background:#fff;}
+.block-head{max-width:680px;margin-bottom:42px;}
+.block-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px;}
+.block-head p{color:var(--slate);margin-top:14px;font-size:1rem;}
+
+/* two-col */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+@media(max-width:860px){.two-col{grid-template-columns:1fr;gap:32px;}}
+
+/* card lists */
+.num-list{display:flex;flex-direction:column;border-top:1px solid var(--line);}
+.num-list .item{display:flex;gap:22px;padding:24px 0;border-bottom:1px solid var(--line);}
+.num-list .mk{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:0.85rem;padding-top:3px;flex-shrink:0;width:24px;}
+.num-list h4{font-size:1.04rem;margin-bottom:6px;color:var(--navy);}
+.num-list p{font-size:0.92rem;color:var(--slate);}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.grid-3 .cell{background:#fff;padding:30px 26px;}
+.grid-3 .cell h4{font-size:1.02rem;margin-bottom:8px;color:var(--navy);}
+.grid-3 .cell p{font-size:0.88rem;color:var(--slate);}
+@media(max-width:860px){.grid-3{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.grid-3{grid-template-columns:1fr;}}
+
+/* process strip */
+.process-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);}
+.process-strip .stage{padding:30px 24px 26px;border-right:1px solid var(--line);}
+.process-strip .stage:last-child{border-right:none;}
+.process-strip .stage-num{font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gold);}
+.process-strip .stage h4{font-size:1.05rem;margin:12px 0 8px;}
+.process-strip .stage p{font-size:0.86rem;color:var(--slate);}
+@media(max-width:860px){.process-strip{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.process-strip{grid-template-columns:1fr;}.process-strip .stage{border-right:none;border-bottom:1px solid var(--line);}}
+
+/* FAQ accordion */
+.faq-list{border-top:1px solid var(--line);}
+.faq-list details{border-bottom:1px solid var(--line);padding:20px 0;}
+.faq-list summary{cursor:pointer;font-weight:600;color:var(--navy);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:"+";font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:1.2rem;flex-shrink:0;}
+.faq-list details[open] summary::after{content:"–";}
+.faq-list .a{margin-top:12px;color:var(--slate);font-size:0.94rem;max-width:760px;}
+
+/* buttons */
+.btn-primary{background:var(--gold);color:var(--navy);padding:15px 30px;border-radius:2px;font-weight:600;font-size:0.95rem;transition:transform .2s,background .2s;display:inline-block;}
+.btn-primary:hover{background:#cba374;transform:translateY(-1px);}
+.btn-ghost{border:1px solid rgba(255,255,255,0.35);color:#fff;padding:15px 30px;border-radius:2px;font-weight:500;font-size:0.95rem;transition:border-color .2s,background .2s;display:inline-block;}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(255,255,255,0.04);}
+.btn-outline-dark{border:1px solid var(--navy);color:var(--navy);padding:14px 28px;border-radius:2px;font-weight:600;font-size:0.92rem;display:inline-block;transition:background .2s,color .2s;}
+.btn-outline-dark:hover{background:var(--navy);color:#fff;}
+
+/* CTA band */
+.cta-band{padding:80px 0;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;text-align:center;}
+.cta-band h2{color:#fff;font-size:clamp(1.6rem,3.4vw,2.3rem);max-width:600px;margin:0 auto 16px;}
+.cta-band p{color:rgba(255,255,255,0.75);max-width:460px;margin:0 auto 32px;}
+.cta-band .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+/* related services */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+.related-grid a.card{background:#fff;padding:28px 26px;display:block;transition:background .2s;}
+.related-grid a.card:hover{background:var(--paper);}
+.related-grid .tag{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--gold);}
+.related-grid h4{font-size:1.02rem;margin:10px 0 6px;color:var(--navy);}
+.related-grid p{font-size:0.86rem;color:var(--slate);}
+@media(max-width:860px){.related-grid{grid-template-columns:1fr;}}
+
+/* CONTACT PAGE specifics */
+.contact-grid{display:grid;grid-template-columns:1fr 0.85fr;gap:64px;align-items:start;}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+.form-field{margin-bottom:20px;}
+.form-field label{display:block;font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.form-field input, .form-field select, .form-field textarea{
+  width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:2px;font-family:'Inter',sans-serif;
+  font-size:0.94rem;background:#fff;color:var(--ink);
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus{outline:none;border-color:var(--gold);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:520px){.form-row{grid-template-columns:1fr;}}
+.contact-info-card{background:var(--navy);color:#fff;padding:36px 30px;border-radius:2px;}
+.contact-info-card h3{color:#fff;font-size:1.2rem;margin-bottom:22px;}
+.contact-info-card .row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.12);}
+.contact-info-card .row:last-child{border-bottom:none;}
+.contact-info-card .row .lbl{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.06em;width:90px;flex-shrink:0;padding-top:2px;}
+.contact-info-card .row .val{font-size:0.92rem;color:rgba(255,255,255,0.85);}
+.map-placeholder{margin-top:20px;height:180px;background:#E8E6DE;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--slate);font-size:0.85rem;font-family:'IBM Plex Mono',monospace;}
+.whatsapp-btn{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:13px 22px;border-radius:2px;font-weight:600;font-size:0.9rem;color:var(--navy);margin-top:18px;transition:border-color .2s;}
+.whatsapp-btn:hover{border-color:var(--gold);}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.6);padding:70px 0 30px;font-size:0.9rem;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,0.1);}
+.footer-grid h5{color:#fff;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:18px;}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-grid a:hover{color:var(--gold);}
+.footer-bottom a:hover{color:var(--gold);}
+.footer-brand p{margin-top:14px;max-width:280px;color:rgba(255,255,255,0.5);font-size:0.88rem;}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:26px;font-size:0.82rem;flex-wrap:wrap;gap:12px;}
+@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark"></span>EduViksit</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services-institutional-transformation.html">Services</a></li>
+      <li><a href="index.html#industries">Industries</a></li>
+      <li><a href="blog.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Consultation</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+  </nav>
+</header>
+
+<section class="page-hero" style="padding:64px 0 48px;">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Privacy Policy</div>
+    <div class="eyebrow on-dark">Legal</div>
+    <h1 style="margin-top:16px;font-size:clamp(1.8rem,3.6vw,2.6rem);">Privacy Policy</h1>
+    <p class="lead">How we collect, use and protect personal data shared with us through our website and consulting engagements.</p>
+  </div>
+</section>
+
+<section class="block on-white bordered reveal">
+  <div class="wrap" style="max-width:820px;">
+    <div style="padding:16px 20px;background:var(--paper);border:1px solid var(--line);margin-bottom:44px;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--slate);">
+      Effective date: [Effective date to be inserted] &nbsp;·&nbsp; This document is a template drafted for EduViksit Transformation Consultants and has not yet been reviewed by qualified legal counsel. It should be reviewed and finalised by a lawyer before publication, and updated with the company's actual registered details.
+    </div>
+    
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">1. Who we are</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">EduViksit Transformation Consultants (“EduViksit,” “we,” “us” or “our”) is an education consulting firm serving institutions across India. This Privacy Policy explains how we collect, use, store and protect personal data through our website and consulting engagements.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">[Registered legal entity name, registration number and registered address to be inserted here.]</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">2. What information we collect</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">Through our website: name, email address, phone number, institution name and type, and any details voluntarily submitted through our contact or consultation request forms.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">Through engagements: institutional data shared with us for the purpose of an audit, assessment or advisory engagement, which may include staff, governance or operational information as agreed in the engagement scope. We do not seek to directly collect personal data of students or minors through our website; any such data encountered during an institutional engagement is handled under the confidentiality terms of that engagement.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">Automatically: limited technical data such as browser type, pages visited and referring source, as described further in our Cookie Policy.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">3. How we use your information</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">To respond to consultation requests and communicate about our services.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">To deliver, manage and improve consulting engagements with your institution.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">To send updates, insights or newsletter content, where you have opted in.</p><p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">To meet legal, regulatory or contractual obligations.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">4. Legal basis and consent</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">We process personal data on the basis of your consent (for example, when you submit a contact form), the performance of a contract (for example, an engagement agreement), or our legitimate interest in operating and improving our services, consistent with applicable Indian data protection law including the Digital Personal Data Protection Act, 2023, once in force.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">5. Data sharing</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">We do not sell personal data. We may share data with service providers who support our operations (for example, email or scheduling tools) under confidentiality obligations, or where required by law.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">6. Data retention</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">We retain personal data only as long as necessary for the purposes described in this policy, or as required by applicable law and our engagement contracts. [Specific retention periods to be finalised with legal counsel.]</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">7. Your rights</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">Subject to applicable law, you may request access to, correction of, or deletion of your personal data, or withdraw consent for further contact, by writing to us using the contact details below.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">8. Data security</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">We take reasonable technical and organisational measures to protect personal data against unauthorised access, loss or misuse. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">9. Grievance officer</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">[Name, designation and contact details of the grievance officer to be inserted, as required under applicable Indian data protection and IT rules.]</p>
+    </div>
+    <div style="margin-bottom:36px;">
+      <h3 style="font-size:1.15rem;color:var(--navy);margin-bottom:4px;">10. Changes to this policy</h3>
+      <p style="color:var(--slate);margin-top:12px;font-size:0.95rem;">We may update this Privacy Policy from time to time. The “Effective date” above will reflect the date of the most recent revision.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block on-paper reveal">
+  <div class="wrap" style="max-width:820px;">
+    <div class="block-head" style="margin-bottom:0;">
+      <div class="eyebrow">Questions</div>
+      <h2 style="font-size:1.4rem;">Contact us about this policy</h2>
+      <p>Reach out at <strong>hello@eduviksit.in</strong> or through our <a href="contact.html" style="color:var(--blue);border-bottom:1px solid var(--blue);">contact page</a> for any questions about this document.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark"></span>EduViksit</a>
+        <p>Transforming Institutions. Empowering Education. Building Viksit Bharat.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services-institutional-transformation.html">Institutional Transformation</a></li>
+          <li><a href="services-compliance-governance.html">Compliance &amp; Governance</a></li>
+          <li><a href="services-digital-ai-transformation.html">Digital &amp; AI Transformation</a></li>
+          <li><a href="services-leadership-development.html">Leadership Development</a></li>
+          <li><a href="services-documentation-sops.html">Documentation &amp; SOPs</a></li>
+          <li><a href="services-csr-ngo-consulting.html">CSR &amp; NGO Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="blog.html">Insights &amp; Blog</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EduViksit Transformation Consultants. All rights reserved.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a> · <a href="cookie-policy.html">Cookie Policy</a> · <a href="disclaimer.html">Disclaimer</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.1});
+  revealEls.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
